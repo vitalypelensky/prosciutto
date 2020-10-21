@@ -1,0 +1,20 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper div{
+    padding: 0px 5px;
+    cursor: pointer;
+    color: #ff667f;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.wrapper .active{
+    color: #fff;
+}
+
+.wrapper > div:hover{
+    color: #fff;
+}

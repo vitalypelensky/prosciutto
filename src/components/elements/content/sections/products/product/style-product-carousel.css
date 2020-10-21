@@ -1,0 +1,31 @@
+/* square buttons */
+.rec.rec-arrow {
+    display: none;
+    border-radius: 50%;
+    border: 3px solid #ff667f;
+    background-color: transparent;
+    color: #ff667f;
+}
+
+.rec.chowzb:hover:enabled, .rec.chowzb:focus:enabled {
+    background-color: #ff667f;
+    color: #fff
+}
+
+/* hide disabled buttons */
+.rec.rec-arrow:disabled {
+    visibility: hidden;
+}
+/* disable default outline on focused items */
+/* add custom outline on focused items */
+.rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px lightgrey;
+}
+
+
+@media screen and (min-width: 768px){
+    .rec.rec-arrow{
+        display: block;
+    }
+}

@@ -1,0 +1,49 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+
+.content{
+    width: 300px;
+    height: auto;
+    max-height: 700px;
+    overflow-y: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.iconWrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon{
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+}
+
+.icon svg{
+    width: 100%;
+    height: 100%;
+}
+
+.titleModal{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descriptionModal{
+    font-size: 16px;
+    margin-top: 30px;
+}

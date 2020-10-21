@@ -1,0 +1,63 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wrapper input, .wrapper textarea{
+    width: 290px;
+    background-color: transparent;
+    border: 2px solid #ff667f;
+    outline: none;
+    padding: 15px;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 18px;
+    resize: none
+}
+
+.wrapper button{
+    width: 100%;
+    border: 2px solid #ff667f;
+    background-color: transparent;
+    color: #ff667f;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+    outline: none;
+}
+
+.wrapper button:hover{
+    color: #fff;
+    background-color: #ff667f;
+}
+
+.wrapper button:disabled,
+.wrapper button[disabled]{
+    border-color: #ccc;
+    background-color: #ccc;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+}
+
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

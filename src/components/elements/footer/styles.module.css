@@ -1,0 +1,72 @@
+.wrapper{
+    width: 100%;
+    background-color: #0e0e0e;
+}
+
+.topFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image{
+    text-align: center;
+}
+
+.image img{
+    width: 150px;
+}
+
+.itemContact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.itemContact a{
+    margin-left: 15px;
+    color: #ff667f;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.itemContact:hover .icon svg path{
+     fill: #fff;
+     stroke: #fff;
+ }
+
+.itemContact:hover a{
+    color: #fff;
+}
+
+.network{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.network .icon{
+    margin: 0px 5px;
+}
+
+.icon svg{
+    width: 30px;
+    height: 30px;
+}
+
+.icon svg path{
+    fill: #ff667f;
+    stroke: #ff667f;
+}
+
+.icon:hover svg path{
+    fill: #fff;
+    stroke: #fff;
+}
+
+@media screen and (min-width: 768px){
+    .topFooter{
+        flex-direction: row;
+    }
+}

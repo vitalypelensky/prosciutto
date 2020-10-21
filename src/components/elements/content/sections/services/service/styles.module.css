@@ -1,0 +1,66 @@
+.wrapper{
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.wrapper:hover .serviceImage{
+    animation-duration: 1s;
+    animation-name: rotate;
+}
+
+.serviceNumber{
+    font-size: 200px;
+    color: #ff667f;
+    text-align: center;
+}
+
+.serviceImage{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.serviceImage img{
+    width: 64px;
+}
+
+.serviceContent{
+    /*position: absolute;*/
+    left: 20px;
+    bottom: 0px;
+}
+
+.serviceTitle{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.serviceDescription{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .wrapper{
+        width: calc(50% - 10px);
+    }
+}
+
+@media screen and (min-width: 992px){
+    .wrapper{
+        position: relative;
+        width: calc(25% - 10px);
+        margin-bottom: 0px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
